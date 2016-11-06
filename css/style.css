@@ -1,0 +1,38 @@
+* { box-sizing: border-box;margin: 0; }
+html { font-family: Arial, Helvetica, sans-serif; }
+body {
+	font-size: 16px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto; }
+.row { width:100%; }
+h1 { text-align: center;margin-top: 30px;margin-bottom: 40px;font-size:2em; }
+.item { float: left;margin-bottom: 20px;background-color: #bdbdbd;border: #000 1px solid; }
+.item h2 { 
+	float: right;
+	margin: 0;
+	text-align: center;
+	padding: 5px 40px;
+	margin-bottom: 20px;
+	font-size:1.2em;
+	border-bottom: #000 1px solid;
+	border-left: #000 1px solid; }
+.item p { clear: both;padding: 0 20px 20px;line-height: 1.5em; }
+.chicken { background-color: #d49899;color: #000; }
+.beef { background-color: #bf4646;color: #fff; }
+.sushi { background-color: #e4d09b;color: #000; }
+
+/*Desktop version of the site when the width of the browser window is 992px and above*/ 
+
+@media (min-width: 992px) { .item { width: 33.33%; } }
+
+/*Tablet view should appear only if the width of the browser window is between 768px and 991px inclusively */ 
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	.item { width: 50%; }
+	.item:nth-child(3) { width: 100%; }
+}
+
+/*Mobile view should appear only if the width of the browser is equal to or less than 767px*/
+
+@media (max-width: 767px) { .item { width: 100%; } }
